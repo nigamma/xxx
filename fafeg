@@ -1,0 +1,37 @@
+echo "#xxx" >> README.md 
+git init 
+git add README.md 
+git commit -m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/nigamma/xxx.git
+ git push -你起源主要<input type="text" id="content" value="" required/>
+<button type="button" onClick="copyUrl2()">复制一下</button>
+<script>
+function copyUrl2(){
+    var urlresult=document.getElementById("content");
+    urlresult.select(); // 选择对象
+    document.execCommand("Copy"); // 执行浏览器复制命令
+    alert("复制成功");
+}
+</script><span onclick="copy('文字内容')">复制一下</span>
+<script>
+function copy(text) {
+    const id = 'copy-hide-dom';
+    let elem = document.getElementById(id);
+    if (!elem) {
+        elem = document.createElement('input');
+        elem.style.height = '0px';
+        elem.style.outline = '0px';
+        elem.style.borderWidth = '0px';
+        elem.style.padding = '0 0';
+        elem.style.margin = '0 0';
+        elem.style.position = 'fixed';
+        document.body.appendChild(elem);   }
+     
+    elem.value = text;
+    elem.select();
+    elem.setSelectionRange(0, elem.value.length);
+    document.execCommand('copy');
+    alert("复制成功");
+}
+</script>
