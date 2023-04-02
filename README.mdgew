@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+#include<cstdio>
+#include<cstdlib>
+#include<ctime>
+#include<windows.h>
+using namespace std;
+struct IDname
+{
+    int geshu;
+    string NAME;
+};
+IDname jue_se[100];
+struct ID
+{
+    int num;
+    bool life;
+    string name;
+    int know;
+    int how;
+};
+ID player[21];
+int n, MY, kill1, kill2;
+char a;
+bool jieyao = 1, duyao = 1;
+int lieren, shouwei = 0;
+void init1()
+{
+    jue_se[1].NAME = "村民 ";
+    jue_se[2].NAME = "狼人 ";
+    jue_se[3].NAME = "女巫 ";
+    jue_se[4].NAME = "预言家 ";
+    jue_se[5].NAME = "猎人 ";
+    jue_se[6].NAME = "守卫 ";
+}
+void init2(int nn)
+{
+    switch (nn)
+    {
+    case 6:
+        jue_se[1].geshu = 3;
+        jue_se[2].geshu = 2;
+        jue_se[3].geshu = 1;
+        jue_se[4].geshu = 0;
+        jue_se[5].geshu = 0;
+        jue_se[6].geshu = 0;
+        break;
+————————————————
+版权声明：本文为CSDN博主「伟大的旭哥」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/GKS_zzx/article/details/126127235
